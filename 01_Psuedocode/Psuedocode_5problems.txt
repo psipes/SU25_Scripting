@@ -1,0 +1,80 @@
+Pat Sipes
+
+1. Print user input to all caps
+-------------------------------
+
+variable: userInput = none
+variable: upperUserInput = none
+1. WHILE userInput is NONE, EMPTY, A NUMBER, or ALREADY CAPPED:
+	1. Print out: "What would you like to capitalize?: "
+	2. Store user input in userInput variable
+2. Use string function to capitalize input and store in upperUserInput
+3. Print upperUserInput to screen
+--------------------------------------------------------------------
+--------------------------------------------------------------------
+1. Print out: "What would you like to capitalize? "
+2. Store user input in userInput variable
+	2a. Error check userInput: if empty, is number or already capped
+		ASK AGAIN UNTIL VALID
+3. use string function to capitalize input and store in upperUserInput
+4. Print upperUserInput to screen
+
+
+
+
+2.Add two user numbers together, print result
+---------------------------------------------
+variable: num1 = none
+variable: mum2 = none
+variable: sum = 0
+
+1. Print "What is your first number?: "
+2.WHILE num1 is NONE, is EMPTY, or NOT A NUMBER, keep asking question above
+	ONCE VALID: store user input in num1
+3. Print "What is your second number?: "
+4.WHILE num2 is NONE, is EMPTY, or NOT A NUMBER, keep asking question above
+	ONCE VALID: store user input in num2
+5. sum = num1 + num2
+6. print sum
+
+
+
+
+3.Get an unknown amount of numbers from user, add together
+-----------------------------------------------------------
+variable: addNum = nine
+variable: sum = 0
+variable: addAnother = YES
+
+1. While addAnother is YES (//while user wants to continue add numbers)
+	1. Print out: "Number to add to total: "
+	2. While addNum is NONE, is EMPTY, or NOT A NUMBER, keep asking question
+		Once valid: store user input to addNum
+		sum = sum + addNum
+	3. Empty addNum for a new number. addNum = none
+	4. Print out: "Do you want to add another number? (YES/NO): "
+		-If user input = yes, nothing happens (continue)
+		-If anything else, addAnother = NO (break)
+2. After addAnother is no longer YES, print sum
+
+
+
+
+4. User defines max number, pirnt out random number between 0 and max,
+user choose play again or quit.
+----------------------------------------------------------------------
+variable: maxNum = none
+variable: compNum = none
+variable: playAgain = Y
+
+*Set up random generator 
+1. While playAgain is Y (while user wants a random number)
+	1. Print out: "Give me a maximum whole number: "
+	2. While maxNum is NONE, EMPTY, or NOT A NUMBER, keep asking
+		Once valid, store user input into maxNum
+	3. compNum = random number between 0 and maxNum *look at inclusive/exclusive ends
+	4. print compNum
+	5. Print out: "Play again? y/n: "
+		IF y: do nothing/continue
+		If other: playAgain = N, break end of game
+2 Print out "Goodbye" 
