@@ -71,9 +71,10 @@ variable: playAgain = Y
 1. While playAgain is Y (while user wants a random number)
 	1. Print out: "Give me a maximum whole number: "
 	2. While maxNum is NONE, EMPTY, or NOT A NUMBER, keep asking
-		Once valid, store user input into maxNum
+		Once valid, sctore user input into maxNum
 	3. compNum = random number between 0 and maxNum *look at inclusive/exclusive ends
 	4. print compNum
+		-Make sure to zero out maxNum/CompNum
 	5. Print out: "Play again? y/n: "
 		IF y: do nothing/continue
 		If other: playAgain = N, break end of game
